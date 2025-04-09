@@ -22,7 +22,7 @@ if __name__ == "__main__":
         entrada_usuario = input("> ").strip()
         
         if not entrada_usuario:
-            print("¡Adiós!")
+            print("Ejecución finalizada.")	
             break
         
         if problema1.validar_fen(entrada_usuario):
