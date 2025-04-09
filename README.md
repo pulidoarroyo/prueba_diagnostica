@@ -1,5 +1,12 @@
-<<<<<<< HEAD
 # Prueba diagnóstica
+
+Universidad Nacional Experimental de Guayana.
+
+Unidad curricular: Lenguajes y compiladores.
+
+Autor: Alejandro Pulido. 
+
+C.I: 30.576.458.
 
 ## Estructura
 
@@ -28,12 +35,4 @@ El proyecto usa las siguientes librerías estándar de python:
 
 - `tkinter`: Para funcionalidades de arrastrar y soltar
 - `re`: Para el manejo de expresiones regulares
-=======
-Universidad Nacional Experimental de Guayana.
->>>>>>> d927326c966b280890012cce11546184d1d06e16
 
-Unidad curricular: Lenguajes y compiladores.
-
-Autor: Alejandro Pulido. 
-
-C.I: 30.576.458.
