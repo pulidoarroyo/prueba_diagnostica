@@ -33,6 +33,6 @@ python problemaX/problemaX.py
 
 El proyecto usa las siguientes librerías estándar de python:
 
-- `tkinter`: Para funcionalidades de arrastrar y soltar
+- `tkinter`: Para crear y manejar GUI
 - `re`: Para el manejo de expresiones regulares
 
