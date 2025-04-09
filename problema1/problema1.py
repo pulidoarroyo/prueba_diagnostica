@@ -96,7 +96,34 @@ def validar_fen(cadena):
     return True
 
 
-# Ejemplo de uso
+    # Ejemplos predefinidos para mostrar al usuario
+ejemplos = [
+    "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",  # Posición inicial
+    "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1",
+    "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1" 
+]
+
 if __name__ == "__main__":
-    ejemplo_fen = "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1"
-    print(f"¿Es válido '{ejemplo_fen}'? {validar_fen(ejemplo_fen)}")
+    print("VALIDADOR DE NOTACIÓN FEN (Forsyth-Edwards Notation)")
+    print("-" * 50)
+    print("Ejemplos de notación FEN válida:")
+    for i, ejemplo in enumerate(ejemplos):
+        print(f"{i+1}. {ejemplo}")
+    print("-" * 50)
+    
+    # Input para que el usuario ingrese una cadena FEN
+    print("Ingrese una cadena FEN para validar (o presione Enter para salir):")
+    
+    while True:
+        entrada_usuario = input("> ").strip()
+        
+        if not entrada_usuario:
+            print("Ejecución finalizada.")	
+            break
+        
+        if validar_fen(entrada_usuario):
+            print("✓ La cadena FEN es VÁLIDA")
+        else:
+            print("✗ La cadena FEN es INVÁLIDA")
+        
+        print("\nIngrese otra cadena FEN para validar (o presione Enter para salir):")
